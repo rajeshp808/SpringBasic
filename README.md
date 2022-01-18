@@ -1,4 +1,4 @@
 # SpringBasic
-# XML base configuration
+# XML based configuration
 Basic application of spring context, components 
 
