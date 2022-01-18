@@ -18,9 +18,14 @@ public class App
         ApplicationContext appctx= new ClassPathXmlApplicationContext("app.xml"); 
         
         //BasePart part=new MfgPart();
-        BasePart part=(BasePart) appctx.getBean("mfg");
-        System.out.println( "Bean exists ="+appctx.getId().toString() );
+        BasePart part=(BasePart) appctx.getBean("mfg");  //default name for this non qualified , decapitalized value.. i.e. just class name in small caps
+        //System.out.println( "Bean exists ="+appctx.getId().toString() );
         part.create();
         
+        Engpart engpart=(Engpart) appctx.getBean("eng");
+        System.out.println( "Main method part."+engpart.getMatsup() );
+        
+        Material matr=(Material)appctx.getBean("material");
+        System.out.println( matr );
     }
 }

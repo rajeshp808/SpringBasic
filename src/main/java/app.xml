@@ -22,5 +22,13 @@
 	 <bean id="BasePart" class="com.rajesh.spcore.MfgPart"> </bean>
 	 <bean id="BasePart" class="com.rajesh.spcore.EngPart"> </bean> 
 	 -->
+	<bean id="material" class="com.rajesh.spcore.Material">
+	
+	 <constructor-arg value="Suzuki"></constructor-arg> 
+	 
+	 <!--Since this property is commented, constructor argument will be considered	
+	 <property name="supplier" value ="AIR BUS" > </property>  -->
+	  
+	</bean>
 	
 </beans>
